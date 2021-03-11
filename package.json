@@ -1,28 +1,28 @@
 {
-  "name": "ourchoice-home",
+  "name": "web",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "start": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "axios": "0.19.0",
-    "core-js": "^3.6.5",
-    "md5": "2.2.1",
-    "vue": "^2.6.11",
-    "vue-router": "3.1.2"
+    "axios": "^0.19.0",
+    "core-js": "^2.6.5",
+    "md5": "^2.2.1",
+    "vue": "^2.6.10",
+    "vue-router": "^3.1.2"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.2.2",
-    "vue-cli-plugin-postcss-precss": "~1.0.1",
-    "vue-template-compiler": "^2.6.11"
+    "@vue/cli-plugin-babel": "^3.1.1",
+    "@vue/cli-plugin-eslint": "^3.1.1",
+    "@vue/cli-service": "^3.1.1",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "vue-cli-plugin-postcss-precss": "^1.0.1",
+    "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {
     "root": true,
@@ -30,27 +30,16 @@
       "node": true
     },
     "extends": [
-      "plugin:vue/essential",
+      "plugin:vue/recommended",
       "eslint:recommended"
     ],
     "parserOptions": {
       "parser": "babel-eslint"
-    },
-    "rules": {}
+    }
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ],
   "postcss": {
     "plugins": {
-      "postcss-assets": {
-        "cachebuster": false,
-        "loadPaths": [
-          "public/"
-        ]
-      },
+      "postcss-assets": false,
       "postcss-import": {},
       "postcss-extend-rule": {},
       "postcss-advanced-variables": {},
@@ -77,8 +66,12 @@
       "postcss-nested-ancestors": {},
       "postcss-calc": {},
       "postcss-sass-color-functions": {},
-      "lost": {},
+      "lost": false,
       "postcss-utils": {}
     }
-  }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
 }

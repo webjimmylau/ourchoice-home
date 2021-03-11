@@ -1,13 +1,16 @@
 import Vue from 'vue'
 import App from '@/app.vue'
 import router from '@/router'
-import utils from '@/utils'
+import { addClass } from '@/utils'
 
-Vue.config.productionTip = false
-
-Vue.use(utils)
+const util = {
+	install(Vue, name = "$addClass") {
+		Object.defineProperty(Vue.prototype, name, { value: addClass })
+	}
+}
+Vue.use(util)
 
 new Vue({
   router,
-  render: h => h(App),
+  render: h => h(App)
 }).$mount('#app')

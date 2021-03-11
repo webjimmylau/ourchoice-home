@@ -5,9 +5,9 @@
 </template>
 
 <script>
-export default {
-  name: "App"
-};
+  export default {
+    name: 'App'
+  }
 </script>
 
 <style>
@@ -47,7 +47,7 @@ body {
 }
 
 div, p, span, strong, a, ul, ol, li, i, img, h2, h3, h4, h5, form, input, textarea {
-  box-sizing: content-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -68,6 +68,18 @@ img {
 a {
   text-decoration: none;
   color: #666;
+}
+
+input[type="text"], input[type="password"] {
+  height: 38px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  font-size: 13px;
+  border-radius: 5px;
+  
+  &:focus {
+    border-color: #2d8cf0;
+  }
 }
 
 .mod-box {

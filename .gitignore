@@ -2,10 +2,6 @@
 node_modules
 /dist
 
-<<<<<<< HEAD
-
-=======
->>>>>>> d0197e6e34f5283b5940a828bb5fd604c3b4d0df
 # local env files
 .env.local
 .env.*.local
@@ -14,10 +10,7 @@ node_modules
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-<<<<<<< HEAD
 pnpm-debug.log*
-=======
->>>>>>> d0197e6e34f5283b5940a828bb5fd604c3b4d0df
 
 # Editor directories and files
 .idea

@@ -1,13 +1,13 @@
 import vue from 'vue'
 import VueRouter from 'vue-router'
 
-import Home from '@/views/home/index'
-import Login from '@/views/login/index'
-import Register from '@/views/register/index'
-import PasswordReset from '@/views/password-reset/index'
-import Join from '@/views/join/index'
-import About from '@/views/about/index'
-import Empty from '@/views/empty/index'
+const Home = () => import('@/views/home/index')
+const Login = () => import('@/views/login/index')
+const Register = () => import('@/views/register/index')
+const PasswordReset = () => import('@/views/password-reset/index')
+const Join = () => import('@/views/join/index')
+const About = () => import('@/views/about/index')
+const Empty = () => import('@/views/empty/index')
 
 const routes = [{
     path: '/',
@@ -47,7 +47,8 @@ vue.use(VueRouter)
 
 const router = new VueRouter({
   routes,
-  mode: 'history'
+  mode: 'history',
+  linkActiveClass: 'active'
 })
 
 export default router

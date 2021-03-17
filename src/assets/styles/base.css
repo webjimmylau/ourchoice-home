@@ -26,12 +26,25 @@ body {
   height: 100%;
 }
 
+body,
+input,
+textarea {
+  font-size: 14px;
+  font-family: "Microsoft Yahei", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 img {
   border: 0;
   vertical-align: middle
 }
 
-input  {
+input {
   margin: 0;
   padding: 0;
   border: 0 none;
